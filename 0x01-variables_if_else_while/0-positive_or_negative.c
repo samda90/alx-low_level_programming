@@ -1,14 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * manin - Entry point
- * main - Determines if number is less, greater or equals zero (0)
- * Return: Always 0 (Success)
- */
 
 /**
- * Main - Entry point
+ * Main - programs that runs either positive or negative intergers
  *
  * Return: Always 0 (success)
  */
@@ -20,16 +15,16 @@
 
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
-		/*my code goes here */
-		if (n > 0)
+		
+		if (n > 0);
 		{
 			printf("%d is positive\n", n);
 		}
-		else if (n==0)
+		else if (n == 0)
 		{
 			printf("%d is zero\n", n);
 		}
-		else 
+		else
 		{
 			printf("%d is negative\n", n);
 		}
