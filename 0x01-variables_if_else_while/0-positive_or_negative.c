@@ -1,4 +1,4 @@
-#include <stlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /*
@@ -25,7 +25,7 @@
 		}
 		else if (n==0)
 		{
-			printf("&d is zero\n", n);
+			printf("%d is zero\n", n);
 		}
 		else 
 		{
