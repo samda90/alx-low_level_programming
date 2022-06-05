@@ -2,34 +2,29 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes here */
-
-/*
- *main - Last Digit
+/**
+ * main - Program to display the last digit of a randomly generated number
  *
  * Return: Always 0 (Success)
  */
-
-/* betty style doc for function main goes here */
-
-	int main (void)
-
+int main(void)
 {
-int n, L;
+	int n, R;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	L = (n % 10);
-	if (L > 5)
+	R = (n % 10);
+	if (R > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, L);
+		printf("Last digit of %d is %d and is greater than 5\n", n, R);
 	}
-	else if (L == 0)
+	else if (R == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, L);
+		printf("Last digit of %d is %d and is 0\n", n, R);
 	}
-	else if (L < 6)
+	else if (R < 6)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, L);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, R);
 	}
 	return (0);
 }
