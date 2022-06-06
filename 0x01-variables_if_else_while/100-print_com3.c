@@ -1,36 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - Program to prints numbers btwn 00 to 89.
+ * main - Entry point
+ *
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, e;
+	int _, _i;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (_ = 0; _ < 9; _++)
 	{
-		i = 48;
-		while (i < 58)
+		for (_i = _ + 1; _i < 10; _i++)
 		{
-			if (e != i && e < i)
-			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
+			putchar((_) + '0');
+			putchar((_i) + '0');
+
+			if (_ == 8 && _i == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		e++;
 	}
 	putchar('\n');
 	return (0);
