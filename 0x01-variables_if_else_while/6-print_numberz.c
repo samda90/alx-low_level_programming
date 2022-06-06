@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Program to print single digit numbers, 0 to 9.
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	int _ = 0;
 
-	for (i = 0; i <= 9; i++)
+	while (_ < 10)
 	{
-		putchar(i);
+		putchar(_ + '0');
+		_++;
 	}
 	putchar('\n');
 	return (0);
