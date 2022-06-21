@@ -5,7 +5,7 @@
  *
  * @a: input pointer.
  * @size: size of the matrix
- * 
+ *
  * Return: no return.
  */
 
