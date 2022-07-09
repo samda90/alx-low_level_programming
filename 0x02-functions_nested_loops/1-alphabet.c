@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * main - function that checks for a digit (0 through 9).
+ * print_alphabet - Program to print alphabet in lowercase.
  *
- * Return: 1 if c is a digit bwtn (0 and 9) OR 0 if otherwise
+ * Return: Always 0 (Success)
  */
-
-int _isdigit(int c)
+void print_alphabet(void)
 {
-	if(c >= 48 && c <= 57)
+	int i;
+
+	for (i = 97; i <= 122; i++)
 	{
-		return (1);
+		_putchar(i);
 	}
-	else
-	{
-		return (0);
-	}
+	_putchar('\n');
 }

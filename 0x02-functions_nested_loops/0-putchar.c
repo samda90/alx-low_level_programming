@@ -1,20 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Function that checks the uppercase character
+ * main - Program that prints _putchar to the standardoutput
  *
- * Return: 1 if uppercase and 0 if otherwise.
+ * Return: Always 0 (Success)
  */
-
-int _isupper(int c)
+int main(void)
 {
-	if(c >= 65 && c <= 90)
+	char arr[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int a;
+
+	for (a = 0; a < 9; a++)
 	{
-		return(1);
+		_putchar(arr[a]);
 	}
-	else
-	{
-		return(0);
-	}
+	_putchar('\n');
+	return (0);
 }
